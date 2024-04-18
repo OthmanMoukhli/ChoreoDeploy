@@ -64,13 +64,6 @@ paths:
               examples:
                 AccountsExample:
                   $ref: '#/components/examples/AccountsExample'
-      security:
-      - default: []
-      x-throttling-tier: Unlimited
-      x-throttling-limit:
-        requestCount: -1
-        unit: MINUTE
-      x-auth-type: Application & Application User
     post:
       tags:
       - Accounts
@@ -103,13 +96,6 @@ paths:
             application/json:
               example:
                 message: Accounts created
-      security:
-      - default: []
-      x-throttling-tier: Unlimited
-      x-throttling-limit:
-        requestCount: -1
-        unit: MINUTE
-      x-auth-type: Application & Application User
   /accounts/{account_id}:
     get:
       tags:
@@ -150,13 +136,6 @@ paths:
             application/json:
               example:
                 message: Account not found
-      security:
-      - default: []
-      x-throttling-tier: Unlimited
-      x-throttling-limit:
-        requestCount: -1
-        unit: MINUTE
-      x-auth-type: Application & Application User
 components:
   schemas:
     Account:
@@ -245,11 +224,3 @@ components:
         type: personal
         address: 1 Main St,Los Angeles,CA,92000,USA
         air_miles: 20000
-  securitySchemes:
-    default:
-      type: oauth2
-      flows:
-        implicit:
-          authorizationUrl: https:///authorize
-          scopes: {}
-x-wso2-disable-security: 'false'
