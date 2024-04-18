@@ -1,8 +1,8 @@
 version: 1.0
 endpoints:
-  - name: Accounts
+  - name: AccountsAPI
     port: 8290
     type: REST
     networkVisibility: Public
-    context: /default
+    context: /
     schemaFilePath: TrainingRegistryResources/swagger.yaml
