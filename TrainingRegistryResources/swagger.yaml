@@ -14,7 +14,7 @@ info:
     email: example@example.com
   version: 1.0.0
 servers:
-- url: https://c553a4ff-98f7-42ce-855f-b50c00f6db57-dev.e1-us-east-azure.choreoapis.dev/ztar/accountsapi/accounts-a15/v1.0
+- url: https://c553a4ff-98f7-42ce-855f-b50c00f6db57-dev.e1-us-east-azure.choreoapis.dev/ztar/accountsapi/accounts-6ed/v1.0
 security:
 - application:
   - read
