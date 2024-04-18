@@ -14,7 +14,7 @@ info:
     email: example@example.com
   version: 1.0.0
 servers:
-- url: http://localhost:8290
+- url: http://localhost:8290/default
 
 security:
 - application:
