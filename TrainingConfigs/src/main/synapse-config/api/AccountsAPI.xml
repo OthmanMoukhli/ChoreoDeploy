@@ -4,6 +4,7 @@
         <inSequence>
             <!--This is generated API skeleton.-->
             <!--Business Logic Goes Here-->
+            <header action="remove" name="Accept" scope="transport"/>
             <call>
                 <endpoint key="GetAllFlightsCustomers"/>
             </call>
@@ -58,7 +59,7 @@
             </dblookup>
             <payloadFactory media-type="json">
                 <format>{&#xd;
-	"id": $1&#xd;
+	"id": $1,&#xd;
 	"name": "$2",&#xd;
 	"type": "$3",&#xd;
 	"address": "$4, $5, $6, $7, $8",&#xd;
